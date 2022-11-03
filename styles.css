@@ -100,6 +100,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-primary-200);
+  background-image: url("images/bg-intro-mobile.png");
 }
 
 .header {
@@ -156,8 +158,8 @@ body {
 .container {
   width: 100%;
   max-width: 23.4375rem;
-  background-color: var(--clr-primary-200);
-  background-image: url("images/bg-intro-mobile.png");
+  /* background-color: var(--clr-primary-200);
+  background-image: url("images/bg-intro-mobile.png"); */
   padding: 5.5rem 1.5rem 4.25rem;
 }
 
