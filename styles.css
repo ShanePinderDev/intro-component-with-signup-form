@@ -102,6 +102,7 @@ body {
   align-items: center;
   background-color: var(--clr-primary-200);
   background-image: url("images/bg-intro-mobile.png");
+  min-height: 100vh;
 }
 
 .header {
@@ -156,7 +157,7 @@ body {
 /* layout */
 
 .container {
-  width: 100%;
+  max-width: 100%;
   max-width: 23.4375rem;
   /* background-color: var(--clr-primary-200);
   background-image: url("images/bg-intro-mobile.png"); */
@@ -203,7 +204,7 @@ body {
 }
 
 .form-control > * + * {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .form-field input {
@@ -279,14 +280,23 @@ footer {
   color: hsla(249, 10%, 26%, 0.749);
 }
 
-@media (min-width: 36em) {
+/* @media (min-width: 64em) { */
+
+@media (min-width: 40em) {
   .container {
+    /* background-color: lime; */
     display: flex;
-    gap: 1.25rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 1.25rem; */
+    /* gap: 0.8rem; */
+    /* max-width: calc(100% - 20px); */
+    /* margin: 0 auto; */
+    /* padding: 0 10px; */
     width: 100%;
     max-width: 64rem;
     background-image: url("images/bg-intro-desktop.png");
-    padding: 7.5625rem 3.125rem 6.875rem;
+    /* padding: 100px 0px 90px; */
   }
 
   .header {
@@ -300,9 +310,18 @@ footer {
     letter-spacing: -0.391667px;
   }
 
+  .header-text {
+    margin-top: 1.75rem;
+  }
+
   .offer {
     margin-top: 0;
-    padding: 1.125rem 1.5625rem;
+    padding: 1.125rem 5px;
+  }
+
+  .offer-text {
+    font-size: var(--fs-200);
+    letter-spacing: 0.107857px;
   }
 
   .submit-terms-text {
@@ -312,20 +331,43 @@ footer {
     text-align: left;
   }
 
+  .form-btn {
+    /* width: 100%; */
+    padding: 0.9375rem 23px;
+
+    font-weight: var(--fw-600);
+    font-size: var(--fs-300);
+    line-height: 1.625rem;
+    letter-spacing: 0.25px;
+  }
+
   footer {
-    width: 100%;
-    max-width: 48rem;
+    max-width: 100%;
+    width: 48rem;
   }
 }
 
 @media (min-width: 64em) {
   .container {
+    /* background-color: aqua; */
     width: 100%;
     max-width: 90rem;
+    padding: 6.25rem 12.5rem 5.625rem;
+    /* padding: 6.875rem 5px 6.875rem; */
+  }
+}
+
+@media (min-width: 86em) {
+  .container {
+    /* background-color: yellow; */
+    max-width: 100%;
+    width: 90rem;
     background-image: url("images/bg-intro-desktop.png");
-    padding: 7.5625rem 10.3125rem 6.875rem;
+    /* padding: 7.5625rem 10.3125rem 6.875rem; */
+    padding: 6.875rem 10.3125rem 6.875rem;
+    /* padding: 110px 100px 110px; */
     display: flex;
-    gap: 2.8125rem;
+    gap: 1.5rem;
   }
 
   .header {
@@ -342,12 +384,18 @@ footer {
   }
 
   .header-text {
-    margin-top: 0.6875rem;
+    /* margin-top: 0.6875rem; */
+    margin-top: 2.25rem;
   }
 
   .offer {
     margin-top: 0;
     padding: 1.125rem 6.875rem;
+  }
+
+  .offer-text {
+    font-size: var(--fs-200);
+    letter-spacing: 0.107857px;
   }
 
   .form-control {
@@ -356,6 +404,10 @@ footer {
 
   .form-control input {
     padding: 1rem 2rem;
+  }
+
+  .form-control > * + * {
+    /* margin-top: 0.75rem; */
   }
 
   .form-btn {
